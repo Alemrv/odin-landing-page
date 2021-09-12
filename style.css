@@ -1,12 +1,19 @@
 *{
     font-family: 'Open Sans', sans-serif;;
 }
+*,*:before, *:after {
+
+    box-sizing: border-box ; 
+    padding: 0 ;
+    margin: 0 ;  
+    
+    }
+    
 body{
     height: 100vh;
     margin: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 header, .hero, footer{
@@ -18,6 +25,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 1em 0em;
+    flex: 1;
 }
 
 header p {
@@ -43,7 +52,33 @@ a{
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: .5em;
+    padding-top: 2em;
+    padding-bottom: 10em;
+}
+
+.text-div{
+    width: 100%;
+    max-width: 450px;
+}
+.hero button{
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    margin-top: 0.5em;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.hero img{
+    height: 100%;
+    max-height: 250px;
+    width: 100%;
+    max-width: 600px;
 }
 
 h1{
@@ -55,6 +90,101 @@ h1{
 .hero p{
     font-size: 18px;
     color: #E5E7EB;
+}
+
+h2{
+    text-align: center;
+    margin: 1em 0em;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex: 1;
+    padding-bottom: 10em;
+}
+
+.information div img{
+    height: 200px;
+    width: 250px;
+    border: solid 4px #3882f6;
+    border-radius: 6px;
+}
+
+.information div p{
+    width: 250px;
+    text-align: center;
+    color: #1F2937
+}
+
+.quote{
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+.quote p{
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    font-style: italic;
+    height: auto;
+    margin: auto;
+    width: 50%;
+    padding-top: 2em;
+}
+.quote span {
+    margin: 1em .5em 0em 0em;
+    font-size: 34px;
+    font-weight: bold;
+    float: right;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2em;
+}
+.action{
+    display: flex;
+    flex: 1;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.action div{
+    background-color: #3882f6;
+    border: 0px;
+    border-radius: 5px;
+    padding: 1em 2em;
+}
+
+.action-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5em 10em;
+    width: 50%;
+}
+
+.action button{
+    color: white;
+    background-color: #3882f6;
+    border: solid 2px white;
+    padding: .5em 1.5em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 2em 0em;
+    flex: 1;
 }
 
 
